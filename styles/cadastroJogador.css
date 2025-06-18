@@ -1,0 +1,107 @@
+/* Geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Formulário */
+form {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Botão */
+button[type="submit"] {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Mensagem de erro */
+#mensagem-erro {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* NAV (mesmo estilo existente) */
+nav {
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  gap: 20px;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.btn-login {
+  background-color: #4CAF50;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: white;
+}
+
+.btn-login:hover {
+  background-color: #45a049;
+}

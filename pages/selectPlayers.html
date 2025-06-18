@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Selecionar Jogadores</title>
+  <link rel="stylesheet" href="../styles/selecionarJogadores.css" />
+  <link rel="stylesheet" href="../styles/home.css">
+  <script src="../scripts/auth.js"></script>
+  <script>
+    verificarAutenticacao();
+  </script>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <div class="nav-left">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="players.html">Jogadores</a></li>
+        <li><a href="games.html">Jogos</a></li>
+        <li><a href="ranking.html">Ranking</a></li>
+      </div>
+      <div class="nav-right">
+        <li><a href="login.html" class="btn-login" id="botao-login">Login</a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Selecione os jogadores para o jogo</h2>
+    <form id="form-selecionar-jogadores">
+      <div id="lista-jogadores">
+        <!-- Lista de checkboxes será inserida aqui pelo JS -->
+      </div>
+
+      <button type="submit">Confirmar Seleção</button>
+      <div id="mensagem-erro" class="mensagem-erro"></div>
+    </form>
+  </main>
+
+  <script src="../scripts/selecionarJogadores.js"></script>
+</body>
+
+</html>

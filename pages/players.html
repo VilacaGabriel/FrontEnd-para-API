@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ranking</title>
+    <link rel="stylesheet" href="../styles/home.css" />
+    <script src="../scripts/auth.js"></script>
+    <script>
+        verificarAutenticacao();
+    </script>
+</head>
+
+<body>
+    <!-- MENU DE NAVEGAÇÃO -->
+    <nav>
+        <ul>
+            <div class="nav-left">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="players.html">Jogadores</a></li>
+                <li><a href="games.html">Jogos</a></li>
+                <li><a href="ranking.html">Ranking</a></li>
+            </div>
+            <div class="nav-right">
+                <li><a href="login.html" class="btn-login" id="botao-login">Login</a></li>
+            </div>
+        </ul>
+    </nav>
+    <a href="cadastroJogador.html">Novo Jogador</a>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>Sexo</th>
+                <th>Numero Telefone</th>
+                <th>Categoria Super</th>
+                <th>Categoria Federação</th>
+                <th>Clube</th>
+                <th>alterar</th>
+                <th>excluir</th>
+            </tr>
+        </thead>
+        <tbody id="ranking-body">
+            <!-- Linhas serão inseridas aqui pelo JS -->
+        </tbody>
+    </table>
+
+
+
+    <script src="../scripts/player.js"></script>
+    <script src="../scripts/logado.js"></script>
+
+</body>
+
+</html>

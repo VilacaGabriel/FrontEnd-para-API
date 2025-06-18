@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+nav {
+  background: #333;
+  color: white;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  background: white;
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#lista-jogadores {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+  background: #fafafa;
+}
+
+#lista-jogadores div {
+  margin-bottom: 8px;
+}
+
+button {
+  background-color: #4caf50;
+  border: none;
+  padding: 10px 18px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.mensagem-erro {
+  color: red;
+  margin-top: 10px;
+}

@@ -1,0 +1,105 @@
+main {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #004d99;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+form input[type="text"],
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form select:focus {
+  border-color: #004d99;
+  outline: none;
+}
+
+#lista-jogadores {
+  margin-top: 15px;
+  max-height: 250px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #fafafa;
+}
+
+#lista-jogadores div {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#lista-jogadores input[type="checkbox"] {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+#lista-jogadores label {
+  cursor: pointer;
+  user-select: none;
+  font-size: 15px;
+}
+
+button[type="submit"] {
+  margin-top: 25px;
+  background-color: #004d99;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #003366;
+}
+
+.mensagem-erro {
+  margin-top: 15px;
+  color: #b00020;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Responsividade básica */
+@media (max-width: 480px) {
+  main {
+    margin: 15px;
+    padding: 15px;
+  }
+
+  button[type="submit"] {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

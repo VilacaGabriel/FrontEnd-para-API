@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Detalhes do Jogo</title>
+    <link rel="stylesheet" href="../styles/home.css" />
+    <script src="../scripts/auth.js"></script>
+    <script>
+        verificarAutenticacao();
+    </script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <div class="nav-left">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="players.html">Jogadores</a></li>
+                <li><a href="games.html">Jogos</a></li>
+                <li><a href="ranking.html">Ranking</a></li>
+            </div>
+            <div class="nav-right">
+                <li><a href="login.html" class="btn-login" id="botao-login">Login</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 id="nome-jogo">Carregando...</h2>
+        <p><strong>Categoria:</strong> <span id="categoria-jogo"></span></p>
+        <p><strong>Status:</strong> <span id="status-jogo"></span></p>
+
+        <h3>Jogadores do Jogo</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome Completo</th>
+                    <th>Categoria</th>
+                    <th>Vitorias</th>
+                    <th>Derrotas</th>
+                    <th>saldoGames</th>
+                    <th>Games Pró</th>
+                </tr>
+            </thead>
+            <tbody id="lista-jogadores">
+            </tbody>
+        </table>
+
+        <h2>Atualizar Pontuação dos Jogadores</h2>
+        <form id="form-pontuacao">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome Completo</th>
+                        <th>Vitórias</th>
+                        <th>Derrotas</th>
+                        <th>Saldo Games</th>
+                        <th>Games Pró</th>
+                    </tr>
+                </thead>
+                <tbody id="form-jogadores">
+                    <!-- Campos serão inseridos via JS -->
+                </tbody>
+            </table>
+            <button type="submit">Salvar Atualizações</button>
+        </form>
+
+
+        <div id="mensagem-erro" class="mensagem-erro"></div>
+    </main>
+
+    <script src="../scripts/viewEditGame.js"></script>
+</body>
+
+</html>

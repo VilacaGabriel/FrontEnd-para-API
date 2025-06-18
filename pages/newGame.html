@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Novo Jogo</title>
+  <link rel="stylesheet" href="../styles/home.css" />
+  <link rel="stylesheet" href="../styles/newGame.css" />
+  <script src="../scripts/auth.js"></script>
+  <script>
+    verificarAutenticacao();
+  </script>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <div class="nav-left">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="players.html">Jogadores</a></li>
+        <li><a href="games.html">Jogos</a></li>
+        <li><a href="ranking.html">Ranking</a></li>
+      </div>
+      <div class="nav-right">
+        <li><a href="login.html" class="btn-login" id="botao-login">Login</a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Criar Novo Jogo</h2>
+    <form id="game-form">
+      <label for="nameGame">Nome do Jogo:</label>
+      <input type="text" id="nameGame" name="nameGame" required />
+
+      <label for="gameCategory">Categoria:</label>
+      <select id="gameCategory" name="gameCategory" required>
+        <option value="">Selecione...</option>
+        <option value="A">Categoria A</option>
+        <option value="B">Categoria B</option>
+        <option value="C">Categoria C</option>
+        <option value="D">Categoria D</option>
+        <option value="E">Categoria E</option>
+        <option value="F">Categoria F</option>
+      </select>
+
+      <h3>Selecione os jogadores para o jogo</h3>
+      <div id="lista-jogadores">
+        <!-- Checkboxes serão inseridos aqui via JS -->
+      </div>
+
+      <button type="submit">Criar Jogo</button>
+      <div id="mensagem-erro" class="mensagem-erro"></div>
+    </form>
+  </main>
+
+  <script src="../scripts/newGame.js"></script>
+</body>
+
+</html>

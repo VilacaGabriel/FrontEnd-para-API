@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ranking</title>
+    <link rel="stylesheet" href="../styles/home.css" />
+    <script src="../scripts/auth.js"></script>
+    <script>
+        verificarAutenticacao();
+    </script>
+</head>
+
+<body>
+    <!-- MENU DE NAVEGAÇÃO -->
+    <nav>
+        <ul>
+            <div class="nav-left">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="players.html">Jogadores</a></li>
+                <li><a href="games.html">Jogos</a></li>
+                <li><a href="ranking.html">Ranking</a></li>
+            </div>
+            <div class="nav-right">
+                <li><a href="login.html" class="btn-login" id="botao-login">Login</a></li>
+            </div>
+        </ul>
+    </nav>
+    <a href="newGame.html">Novo Jogo</a>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome do jogo</th>
+                <th>Categoria</th>
+                <th>Staus jogo</th>
+                <th>Ver jogo</th>
+                <th>Alterar jogo</th>
+                <th>Deletar jogo</th>
+            </tr>
+        </thead>
+        <tbody id="ranking-body">
+            <!-- Linhas serão inseridas aqui pelo JS -->
+        </tbody>
+    </table>
+
+
+
+    <script src="../scripts/games.js"></script>
+    <script src="../scripts/logado.js"></script>
+
+</body>
+
+</html>
